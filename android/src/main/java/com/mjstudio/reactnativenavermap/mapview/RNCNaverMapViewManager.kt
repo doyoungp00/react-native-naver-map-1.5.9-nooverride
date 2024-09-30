@@ -129,7 +129,7 @@ class RNCNaverMapViewManager : RNCNaverMapViewManagerSpec<RNCNaverMapViewWrapper
 
   override fun needsCustomLayoutForChildren(): Boolean = true
 
-  override fun addView(
+  fun addView(
     parent: RNCNaverMapViewWrapper?,
     child: View,
     index: Int,
@@ -143,14 +143,14 @@ class RNCNaverMapViewManager : RNCNaverMapViewManagerSpec<RNCNaverMapViewWrapper
     return parent.mapView?.overlays?.size ?: 0
   }
 
-  override fun getChildAt(
+  fun getChildAt(
     parent: RNCNaverMapViewWrapper?,
     index: Int,
   ): View? {
     return parent?.mapView?.overlays?.get(index)
   }
 
-  override fun removeViewAt(
+  fun removeViewAt(
     parent: RNCNaverMapViewWrapper?,
     index: Int,
   ) {

@@ -44,7 +44,7 @@ class RNCNaverMapMarkerManager : RNCNaverMapMarkerManagerSpec<RNCNaverMapMarker>
     this?.overlay?.run(fn)
   }
 
-  override fun addView(
+  fun addView(
     parent: RNCNaverMapMarker?,
     child: View,
     index: Int,
@@ -52,7 +52,7 @@ class RNCNaverMapMarkerManager : RNCNaverMapMarkerManagerSpec<RNCNaverMapMarker>
     parent?.setCustomView(child, index)
   }
 
-  override fun removeViewAt(
+  fun removeViewAt(
     parent: RNCNaverMapMarker?,
     index: Int,
   ) {
